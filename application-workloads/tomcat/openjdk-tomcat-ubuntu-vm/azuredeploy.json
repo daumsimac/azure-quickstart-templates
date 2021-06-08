@@ -308,6 +308,12 @@
             "[uri(parameters('_artifactsLocation'), concat('java-tomcat-install.sh', parameters('_artifactsLocationSasToken')))]"
           ],
           "commandToExecute": "[concat('sh java-tomcat-install.sh',' ',parameters('javaPackageName'),' ',parameters('tomcatPackageName'))]"
+        },
+        "protectedSettings": {
+            "commandToExecute": "myExecutionCommand",
+            "storageAccountName": "myStorageAccountName",
+            "storageAccountKey": "myStorageAccountKey",
+            "managedIdentity" : {}
         }
       }
     }
